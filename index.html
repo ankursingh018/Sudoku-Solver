@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku solver</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+</head>
+
+<body>
+    <div class="title-sudoku">
+        <h1>SUDOKU SOLVER</h1>
+    </div>
+    <section class="sudoku-solver">
+        <section class="sudoku-box">
+            <input type="number" id="11" name="quantity" min="1" max="9">
+            <input type="number" id="12" name="quantity" min="1" max="9">
+            <input type="number" id="13" name="quantity" min="1" max="9">
+            <input type="number" id="21" name="quantity" min="1" max="9">
+            <input type="number" id="22" name="quantity" min="1" max="9">
+            <input type="number" id="23" name="quantity" min="1" max="9">
+            <input type="number" id="31" name="quantity" min="1" max="9">
+            <input type="number" id="32" name="quantity" min="1" max="9">
+            <input type="number" id="33" name="quantity" min="1" max="9">
+        </section>
+        <section class="sudoku-box">
+            <input type="number" id="14" name="quantity" min="1" max="9">
+            <input type="number" id="15" name="quantity" min="1" max="9">
+            <input type="number" id="16" name="quantity" min="1" max="9">
+            <input type="number" id="24" name="quantity" min="1" max="9">
+            <input type="number" id="25" name="quantity" min="1" max="9">
+            <input type="number" id="26" name="quantity" min="1" max="9">
+            <input type="number" id="34" name="quantity" min="1" max="9">
+            <input type="number" id="35" name="quantity" min="1" max="9">
+            <input type="number" id="36" name="quantity" min="1" max="9">
+        </section>
+        <section class="sudoku-box">
+            <input type="number" id="17" name="quantity" min="1" max="9">
+            <input type="number" id="18" name="quantity" min="1" max="9">
+            <input type="number" id="19" name="quantity" min="1" max="9">
+            <input type="number" id="27" name="quantity" min="1" max="9">
+            <input type="number" id="28" name="quantity" min="1" max="9">
+            <input type="number" id="29" name="quantity" min="1" max="9">
+            <input type="number" id="37" name="quantity" min="1" max="9">
+            <input type="number" id="38" name="quantity" min="1" max="9">
+            <input type="number" id="39" name="quantity" min="1" max="9">
+        </section>
+        <section class="sudoku-box">
+            <input type="number" id="41" name="quantity" min="1" max="9">
+            <input type="number" id="42" name="quantity" min="1" max="9">
+            <input type="number" id="43" name="quantity" min="1" max="9">
+            <input type="number" id="51" name="quantity" min="1" max="9">
+            <input type="number" id="52" name="quantity" min="1" max="9">
+            <input type="number" id="53" name="quantity" min="1" max="9">
+            <input type="number" id="61" name="quantity" min="1" max="9">
+            <input type="number" id="62" name="quantity" min="1" max="9">
+            <input type="number" id="63" name="quantity" min="1" max="9">
+        </section>
+        <section class="sudoku-box">
+            <input type="number" id="44" name="quantity" min="1" max="9">
+            <input type="number" id="45" name="quantity" min="1" max="9">
+            <input type="number" id="46" name="quantity" min="1" max="9">
+            <input type="number" id="54" name="quantity" min="1" max="9">
+            <input type="number" id="55" name="quantity" min="1" max="9">
+            <input type="number" id="56" name="quantity" min="1" max="9">
+            <input type="number" id="64" name="quantity" min="1" max="9">
+            <input type="number" id="65" name="quantity" min="1" max="9">
+            <input type="number" id="66" name="quantity" min="1" max="9">
+        </section>
+        <section class="sudoku-box">
+            <input type="number" id="47" name="quantity" min="1" max="9">
+            <input type="number" id="48" name="quantity" min="1" max="9">
+            <input type="number" id="49" name="quantity" min="1" max="9">
+            <input type="number" id="57" name="quantity" min="1" max="9">
+            <input type="number" id="58" name="quantity" min="1" max="9">
+            <input type="number" id="59" name="quantity" min="1" max="9">
+            <input type="number" id="67" name="quantity" min="1" max="9">
+            <input type="number" id="68" name="quantity" min="1" max="9">
+            <input type="number" id="69" name="quantity" min="1" max="9">
+        </section>
+        <section class="sudoku-box">
+            <input type="number" id="71" name="quantity" min="1" max="9">
+            <input type="number" id="72" name="quantity" min="1" max="9">
+            <input type="number" id="73" name="quantity" min="1" max="9">
+            <input type="number" id="81" name="quantity" min="1" max="9">
+            <input type="number" id="82" name="quantity" min="1" max="9">
+            <input type="number" id="83" name="quantity" min="1" max="9">
+            <input type="number" id="91" name="quantity" min="1" max="9">
+            <input type="number" id="92" name="quantity" min="1" max="9">
+            <input type="number" id="93" name="quantity" min="1" max="9">
+        </section>
+        <section class="sudoku-box">
+            <input type="number" id="74" name="quantity" min="1" max="9">
+            <input type="number" id="75" name="quantity" min="1" max="9">
+            <input type="number" id="76" name="quantity" min="1" max="9">
+            <input type="number" id="84" name="quantity" min="1" max="9">
+            <input type="number" id="85" name="quantity" min="1" max="9">
+            <input type="number" id="86" name="quantity" min="1" max="9">
+            <input type="number" id="94" name="quantity" min="1" max="9">
+            <input type="number" id="95" name="quantity" min="1" max="9">
+            <input type="number" id="96" name="quantity" min="1" max="9">
+        </section>
+        <section class="sudoku-box">
+            <input type="number" id="77" name="quantity" min="1" max="9">
+            <input type="number" id="78" name="quantity" min="1" max="9">
+            <input type="number" id="79" name="quantity" min="1" max="9">
+            <input type="number" id="87" name="quantity" min="1" max="9">
+            <input type="number" id="88" name="quantity" min="1" max="9">
+            <input type="number" id="89" name="quantity" min="1" max="9">
+            <input type="number" id="97" name="quantity" min="1" max="9">
+            <input type="number" id="98" name="quantity" min="1" max="9">
+            <input type="number" id="99" name="quantity" min="1" max="9">
+        </section>
+        <div class="buttons">
+            <button class="button_c" id="solve-sudoku">Solve sudoku</button>
+            <button class="button_c" id="clear-board">Clear board</button>
+        </div>
+    </section>
+    <script src="./scripts.js"></script>
+</body>
