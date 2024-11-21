@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Lora', serif;
+    display: contents;
+    background-color: yellow;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300 , bold;
+    text-transform: uppercase;
+}
+
+.title-sudoku {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.sudoku-solver {
+    width: 35vw;
+    height: 35vw;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    border: 2px solid gray;
+}
+
+.sudoku-box {
+    width: calc(33.333%);
+    height: calc(33.333%);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    border: 1px solid black;
+}
+
+.buttons {
+    padding: 10px;
+    margin: auto;
+}
+
+.button_c {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 10px;
+    border: 3px solid #494949 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.button_c:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+input {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    width: calc(33.333%);
+    height: calc(33.333%);
+    justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
