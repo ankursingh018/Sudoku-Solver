@@ -1,0 +1,11 @@
+{
+    "name": "sudoku-solverr-frontend",
+    "version": "1.0.0",
+    "description": "Sudoku solver",
+    "scripts": {
+      "start": "serve"
+    },
+    "dependencies": {
+      "serve": "^10.0.1"
+    }
+}
